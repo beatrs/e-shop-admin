@@ -1,0 +1,121 @@
+
+.sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #fcfbfc;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.05) 1.95px 1.95px 2.6px;
+    // sticky sidebar
+    height: 100vh;
+    position: sticky;
+    top: 0;
+
+    &.toggled {
+        @media only screen and (max-width: 539px) {
+            display: flex;
+            position: absolute;
+            z-index: 10;
+            transform: translateX(0%);
+            transition: transform 0.5s cubic-bezier(0.4, 0.0, 0.2, 1);
+        }
+    }
+    
+    @media only screen and (max-width: 539px) {
+        display: none;
+    }
+    
+
+    .top {
+        text-align: center;
+        height: 10vh;
+        margin-top: 10px;
+        font-family: 'Archivo', sans-serif;
+        font-size: 1.5em;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        a {
+            text-decoration: none;
+        }
+
+        .logo {
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            background: #8E7DBE;
+            background: linear-gradient(to bottom left, #8E7DBE 0%, #D88C9A 70%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    hr {
+        width: 100%;
+        border-bottom: 0.5px solid rgba(gray, 0.65);
+        margin-bottom: 15px;
+    }
+
+    .center {
+        margin-top: 20px;
+
+        .title {
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            color: rgba(rgb(104, 99, 99), 0.65);
+            font-size: 0.85em;
+            padding: 10px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            
+            a, a:active {
+                text-decoration: none;
+            }
+        }
+
+        li {
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: rgba(rgb(104, 99, 99), 0.65);
+            text-decoration: none;
+            padding: 20px;
+
+            &:hover {
+                background-color: rgba(rgb(218, 218, 218), 0.15);
+            }
+
+        }
+
+        span {
+            font-size: 0.75em;
+            letter-spacing: 2px;
+        }
+
+        .sidebar--icon {
+            font-size: 2em;
+            margin-bottom: 8px;
+        }
+    }
+
+    .bottom {
+        margin-top: 20px;
+        .sidebar--icon {
+            font-size: 1.25em;
+            margin: 15px 40px 15px 20px;
+            cursor: pointer;
+
+            
+        }
+    }
+
+}

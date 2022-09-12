@@ -1,0 +1,91 @@
+
+@import "../../styles/variables";
+
+.MuiDataGrid-root {
+    width: 100% !important;
+}
+
+.datatable {
+    height: 400px;
+    width: auto;
+    margin: 30px;
+    font-family: $text-font;
+}
+
+.actionRow {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+
+    .action--btn {
+        cursor: pointer;
+        height: 1.25em;
+        width: 1.25em;
+        color: $text-dark;
+    }
+}
+
+.MuiDataGrid-cell {
+    border-bottom: none !important;
+    margin-bottom: 5px !important;
+
+    .rowTxt--status {
+        border-radius: 80px;
+        padding: 5px 25px;
+        color: white;
+        width: 110px;
+        display: inline-block;
+        text-align: center;
+    }
+}
+
+.withImg {
+    display: flex;
+    align-items: center;
+
+    .rowImg {
+        width: 3.5em;
+        height: 100%;
+        margin-right: 5px;
+
+        &.profile {
+            border-radius: 50%;
+            border: 1px solid lightgray;
+        }
+    }
+
+    .rowTxt {
+        white-space: break-spaces;
+        margin-left: 5px;
+    }
+
+    .product--name {
+        cursor: pointer;
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.rowDesc {
+    height: 100%;
+    // width: 100%;
+    width: 300px;
+    white-space: no-wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+    top: 30%;
+    // display: flex;
+    // align-items: center;
+
+    // &:hover, &:active, &:focus {
+    //     white-space: break-spaces;
+    //     overflow-y: auto;
+    // }
+
+    .rowDesc--txt {
+        font-size: 0.9em;
+        padding: 2px;
+    }
+}
+

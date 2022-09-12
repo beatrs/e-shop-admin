@@ -1,0 +1,151 @@
+
+
+$textgray : rgba(91, 90, 90, 0.1098039216);
+.user-form {
+
+    .form-body {
+        display: flex;
+        color: gray;
+
+        @media only screen and (max-width: 479px) {
+            flex-direction: column;
+        }
+    }
+
+    h2 {
+        color: #404040;
+    }
+
+
+
+    .section--left {
+        flex: 1;
+
+        .form--item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            
+            label {
+                margin-bottom: 10px;
+                color: #404040;
+            }
+
+            .input--wrapper {
+                flex: 2;
+            }
+
+            .image--input {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 200px;
+
+
+                .image {
+                    height: 160px;
+                    width: 160px;
+                    border: 1px dashed lightgray;
+                    border-radius: 50%;
+                    background-size: cover;
+                    position: relative;
+
+                    img {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+                }
+
+                .upload-btn {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    cursor: pointer;
+                    background-image: url('https://static.vecteezy.com/system/resources/previews/002/318/271/original/user-profile-icon-free-vector.jpg');
+                    background-size: cover;
+
+                    input {
+                        cursor: pointer;
+                        opacity: 0;
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                    }
+
+                    button {
+                        cursor: pointer;
+                        width: 100%;
+                        height: 100%;
+                        border: none;
+                        background-color: transparent;
+                        color: gray;
+                    }
+                }
+            }
+        }
+
+        
+    }
+
+    .section--right {
+        flex: 2;
+
+        .form--item {
+            display: flex;
+            flex-direction: column;
+            height: 4.75em;
+            width: 85%;
+
+            label {
+                margin-bottom: 10px;
+            }
+
+            input {
+                padding: 5px 10px;
+                border-radius: 5px;
+                border: 2px solid $textgray;
+                color: gray;
+
+                &:active, &:focus {
+                    outline: none;
+                }
+            }
+
+            select {
+                padding: 5px 10px;
+                border-radius: 5px;
+                border: 2px solid $textgray;
+                color: gray;
+                background-color: white;
+                height: 4.75em !important;
+            }
+
+            
+
+        }
+    }
+
+    .save--btn {
+        cursor: pointer;
+        width: fit-content;
+        margin-top: 15px;
+        margin: auto;
+        background: #D88C9A;
+        padding: 12px 24px;
+        color: white;
+        font-family: 'Sora', sans-serif;
+        letter-spacing: 1px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 1px 1px 5px 0px rgba(110, 110, 110, 0.45);
+    }
+}

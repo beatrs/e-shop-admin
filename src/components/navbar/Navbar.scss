@@ -1,0 +1,120 @@
+
+.navbar--wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // height: 50px;
+    height: 10vh;
+    margin-top: 10px;
+    padding: 25px 20px;
+    z-index: 20;
+    // border-bottom: 0.5px solid rgba(lightgray, 0.65);
+
+    .drawer {
+        display: none;
+        cursor: pointer;
+        font-size: 1.35em;
+
+        @media only screen and (max-width: 539px) {
+            display: inline-block;
+        }
+    }
+}
+
+.items {
+    height: 2em;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+
+    
+
+    .item {
+        margin-right: 20px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+        
+        &.lang {
+            @media only screen and (max-width: 539px) {
+                display: none;
+            }
+        }
+        .item--icon {
+            margin-right: 5px;
+            font-size: 1.2em;
+        }
+    }
+
+    .badge {
+        height: 18px;
+        width: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        background-color: #ec1919c4;
+        border-radius: 50%;
+        color: white;
+        font-size: 11px;
+        position: absolute;
+        top: -5px;
+        right: -5px;
+
+    }
+}
+
+.avatar {
+    border-radius: 50%;
+    height: 2.5em;
+    border: 1px solid lightgray;
+}
+
+.search {
+    height: 2.5em;
+    display: flex;
+    align-items: center;
+    background-color: rgba(#cdcdcd, 0.20);
+    border-radius: 5px;
+
+    @media only screen and (max-width: 539px) {
+        padding: 0px;
+        position: relative;
+    }
+
+    input {
+        border: none;
+        font-size: 0.9em;
+        color: gray;
+        padding: 5px 10px;
+        background-color: transparent;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .search--wrapper {
+        background-color: #2d3744;
+        color: white;
+        padding: 8px;
+        height: 100%;
+        width: 40px;
+        border-radius: 0px 5px 5px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        @media only screen and (max-width: 539px) {
+            position: absolute;
+            right: 0;
+        }
+
+        .search--icon {
+            font-size: 1em;
+        }
+    }
+}

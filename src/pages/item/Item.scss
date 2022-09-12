@@ -1,0 +1,68 @@
+
+
+.page {
+    display: flex;
+
+    .page--container {
+        flex: 6;
+    }
+}
+
+.item--container {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+
+    @media only screen and (max-width: 810px) {
+        flex-direction: column;
+    }
+
+    .item--img {
+        margin-right: 30px;
+
+        img {
+            max-width: 360px;
+
+            @media only screen and (max-width: 810) {
+                width: 100%;
+            }
+        }
+    }
+
+    .item--info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        
+        .info--item {
+            margin-bottom: 10px;
+
+            .info--artist {
+                text-transform: capitalize;
+            }
+        }
+
+        .info--versions {
+            margin-bottom: 15px;
+        }
+
+        
+    }
+
+    .info--btn {
+        cursor: pointer;
+        width: fit-content;
+        margin-top: 10px;
+        background: #D88C9A;
+        padding: 12px 24px;
+        color: white;
+        font-family: 'Sora', sans-serif;
+        letter-spacing: 1px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 1px 1px 5px 0px rgba(110, 110, 110, 0.45);
+    }
+}
+

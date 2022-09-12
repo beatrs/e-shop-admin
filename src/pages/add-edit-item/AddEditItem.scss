@@ -1,0 +1,218 @@
+
+$textgray : rgba(91, 90, 90, 0.1098039216);
+.form {
+    display: flex;
+
+    .form--container {
+        flex: 6;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 85%;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 30px;
+        border: 1px solid lightgray;
+        border-radius: 5px;
+
+        h2 {
+            margin-bottom: 25px;
+            color: #404040;
+        }
+
+        label {
+            margin-bottom: 10px;
+            color: #404040;
+            // color: red;
+        }
+
+        
+
+        .form--body {
+            display: flex;
+            color: gray;
+
+            @media only screen and (max-width: 810px) {
+                flex-direction: column;
+            }
+        }
+
+        .section--left {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+
+            @media only screen and (max-width: 810px) {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            @media only screen and (max-width: 479px) {
+                flex-direction: column;
+            }
+
+            .form--item {
+                margin-bottom: 20px;
+            }
+
+            .input--wrapper {
+                flex: 2;
+            }
+
+            .image--input {
+                display: flex;
+                flex-direction: column;
+                align-self: flex-start;
+                width: 200px;
+
+
+                .image {
+                    height: 160px;
+                    width: 100%;
+                    border: 1px dashed lightgray;
+                    border-radius: 10px;
+                    // background-size: cover;
+                    position: relative;
+                    margin-bottom: 15px;
+
+                    img {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 100%;
+                        width: 100%;
+                        border-radius: 10px;
+                        object-fit: cover;
+                    }
+                }
+
+                .upload-btn {
+                    border-radius: 10px;
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    cursor: pointer;
+
+                    input {
+                        cursor: pointer;
+                        opacity: 0;
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                    }
+
+                    button {
+                        cursor: pointer;
+                        width: 100%;
+                        height: 100%;
+                        border: none;
+                        background-color: transparent;
+                        color: gray;
+                    }
+                }
+            }
+        }
+
+        .section--right {
+            flex: 2;
+
+
+            .form--row {
+                display: flex;
+                gap: 20px;
+
+                @media only screen and (max-width: 810px) {
+                    flex-direction: column;
+                }
+
+                .form--item {
+                    flex: 1;
+                }
+            }
+            .form--item {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 20px;
+                
+                input {
+                    height: 2.75em;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                    border: 2px solid $textgray;
+                    color: gray;
+    
+                    &:active, &:focus {
+                        outline: none;
+                    }
+                }
+                
+    
+                //TODO: fix width (not same with other items)
+                .item--multi {
+                    flex: 2;
+                    display: flex;
+                    flex-direction: column;
+    
+                    
+    
+                    .tags {
+                        padding: 0;
+                        margin-top: 10px !important;
+                        display: flex;
+                        list-style: none;
+    
+                        li {
+                            margin-right: 10px;
+                            padding: 4px 8px;
+                            border-radius: 40px;
+                            background-color: antiquewhite;
+                            border: 1px solid rgb(188, 174, 156);
+    
+                            .tag--name {
+                                margin-right: 7px;
+                            }
+    
+                            .tag--close {
+                                cursor: pointer;
+                                background-color: rgb(78, 77, 77);
+                                color: rgb(255, 255, 255);
+                                border-radius: 50%;
+                                border: none;
+                            }
+                        }
+                    }
+                }
+    
+            }
+        }
+
+        .help {
+            margin-top: 4px;
+            color: gray;
+            font-size: 0.75em;
+            font-style: italic;
+        }
+
+        .save--btn {
+            cursor: pointer;
+            width: fit-content;
+            margin-top: 15px;
+            margin: auto;
+            background: #D88C9A;
+            padding: 12px 24px;
+            color: white;
+            font-family: 'Sora', sans-serif;
+            letter-spacing: 1px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 1px 1px 5px 0px rgba(110, 110, 110, 0.45);
+        }
+
+    }
+}

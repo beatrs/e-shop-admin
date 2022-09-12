@@ -1,0 +1,54 @@
+
+@import "../../styles/variables";
+
+.datatable {
+    margin: 0 !important;
+    width: 85% !important;
+    align-self: center;
+}
+.list {
+    display: flex;
+
+    .list--container {
+        flex: 6;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .list--top {
+        align-self: center;
+        width: 85%;
+        margin-top: 1rem;
+        margin-bottom: 1.25rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        
+
+        h2 {
+            text-transform: capitalize;
+            font-size: 2em;
+            color: $text-dark;
+        }
+
+        button {
+            // float: right;
+            // align-content: flex-end;
+            cursor: pointer;
+            // width: 100%;
+            height: 100%;
+            background-color: #8e7dbe;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 5px;
+            color: white;
+            font-family: 'Archivo', sans-serif;
+            font-weight: 299;
+            font-size: 0.85em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 1px 1px 5px 0px rgba(110, 110, 110, 0.45);
+        }
+
+    }
+}

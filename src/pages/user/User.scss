@@ -1,0 +1,143 @@
+
+.orders--container {
+    &.datatable {
+        padding: 1.25rem;
+        margin: auto !important;
+        width: 85%;
+
+
+        @media only screen and (max-width: 479px) {
+            padding: 0;
+        }
+    }
+}
+
+.datagrid {
+    width: 78vw;
+    padding: 0.75rem;
+    margin: 1.25rem;
+    margin: auto;
+
+    @media only screen and (max-width: 1499px) {
+        width: 77vw;
+    }
+
+    // .MulDataGrid-cellContent {
+    //     background: #F2D0A9;
+    //     border-radius: 80px;
+    //     padding: 5px 25px;
+    // }
+}
+
+
+.user--container {
+    padding: 1.25rem;
+    margin: 1.25rem;
+    margin: auto;
+    display: flex;
+    gap: 1.5rem;
+    color: gray;
+
+    width: 85%;
+    flex-wrap: wrap;
+    margin-bottom: 1.5em;
+
+    @media only screen and (max-width: 539px) {
+        padding: 0px;
+        
+    }
+
+    .card--heading {
+        color: #404040;
+        margin-bottom: 15px;
+    }
+    
+    .info-card {
+        flex: 2;
+        display: flex;
+        padding: 1.25rem;
+        border: 2px solid #5b5a5a1c;
+        border-radius: 7px;
+        box-shadow: 1px 1px 2px 0px rgba(110, 110, 110, 0.15);
+        color: gray;
+
+        @media only screen and (max-width: 479px) {
+            width: 100%;
+            flex-direction: column;
+            
+        }
+
+        .user--img {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+            img {
+                // width: 50%;
+                width: 10em;
+                border-radius: 50%;
+                border: 1px solid lightgray;
+            }
+        }
+
+        .user--info {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+
+            .info--grp {
+                display: flex;
+                width: 80%;
+
+                .info--lbl {
+                    flex: 1;
+                }
+                .info--txt {
+                    flex: 1;
+                }
+            }
+        }
+
+        .info--btn {
+            cursor: pointer;
+            width: fit-content;
+            margin-top: 10px;
+            background: #D88C9A;
+            padding: 12px 24px;
+            color: white;
+            font-family: 'Sora', sans-serif;
+            letter-spacing: 1px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 1px 1px 5px 0px rgba(110, 110, 110, 0.45);
+
+        }
+
+    }
+
+
+    .status-card {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        border: 2px solid #5b5a5a1c;
+        border-radius: 7px;
+        box-shadow: 1px 1px 2px 0px rgba(110, 110, 110, 0.15);
+
+        .status--infoGrp {
+            display: flex;
+            width: 80%;
+            align-items: center;
+
+            .status--lbl {
+                flex: 1;
+            }
+
+            .status--info {
+                flex: 1;
+            }
+        }
+    }
+}
