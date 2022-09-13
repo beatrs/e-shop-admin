@@ -3,7 +3,7 @@ import axios from "axios"
 
 const LOCAL_URL = "http://localhost:5000/api/"
 // const PROD_URL = "https://wiz-shop.herokuapp.com/api/"
-const PROD_URL = "https://e-shop-api.onrender.com/"
+const PROD_URL = "https://e-shop-api.onrender.com/api/"
 console.log(process.env.NODE_ENV)
 const API_URL = process.env.NODE_ENV === 'production' ? PROD_URL : LOCAL_URL
 console.log(API_URL)
