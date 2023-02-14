@@ -12,7 +12,7 @@ const Login = () => {
     const [username, setUsername] = useState("")
     const [password, setPassword] = useState("")
 
-    const { isError, currentUser } = useSelector((state) => state.user)
+    const isError = useSelector((state) => state.user.isError)
     const dispatch = useDispatch()
 
     const handleLogin = (e) => {
@@ -30,7 +30,9 @@ const Login = () => {
     }
     return(
         <div className="login">
-            <div className="login--bg"></div>
+            <div className="login--bg">
+							<img src={require("assets/images/main-bg.jpg")} alt="" loading="lazy"/>
+						</div>
             <div className="bg-layer"></div>
             <div className="login--container">
                 <div className="left">
